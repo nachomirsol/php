@@ -55,3 +55,15 @@ strtoupper('HELLO world');
 
 // HELLO world -> HELLO WORLD
 ```
+
+Comma separate values in an array
+
+```
+$arr = [1, 2, 3];
+
+foreach ($arr as $value) {
+    $comma_separated = (!empty($comma_separated)) ? $comma_separated .= ', ' . $value : $comma_separated = $value; 
+}
+
+// "1, 2, 3" (string)
+```
