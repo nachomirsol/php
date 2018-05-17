@@ -69,3 +69,12 @@ foreach ($arr as $value) {
 
 // $comma_separated -> "1, 2, 3" (string)
 ```
+
+Create an array from a string
+
+```php
+$arr = 'one two three';
+$each = explode(' ', $arr);
+
+// $each[0] -> 'one'
+```
