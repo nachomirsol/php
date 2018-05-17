@@ -67,5 +67,5 @@ foreach ($arr as $value) {
     : $comma_separated = $value; 
 }
 
-// "1, 2, 3" (string)
+// $comma_separated = "1, 2, 3" (string)
 ```
