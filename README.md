@@ -78,3 +78,14 @@ $each = explode(' ', $arr);
 
 // $each[0] -> 'one'
 ```
+
+Push to an array
+
+```php
+foreach ($arr as $value) {
+  $newArray[] = [
+    'id'   => $value['id'],
+    'name' => $value['name'],
+  ];
+}
+```
