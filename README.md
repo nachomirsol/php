@@ -89,3 +89,22 @@ foreach ($arr as $value) {
   ];
 }
 ```
+
+Create comma separated strings from array
+
+```php
+foreach ($arr as $val) {
+    $newarr .= $prefix . "'". $val . "'";
+    $prefix = ', ';
+}
+
+echo $newarr;
+```
+
+Get duplicate values from an array
+
+```php
+function get_duplicates( $array ) {
+    return array_unique( array_diff_assoc( $array, array_unique( $array ) ) );
+}
+```
